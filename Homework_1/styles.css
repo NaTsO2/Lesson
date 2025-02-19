@@ -1,0 +1,70 @@
+ body {
+     background-color: grey;
+
+ }
+
+ h3 {
+     border-style: none none solid none;
+     border-width: 1px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     font-weight: bold;
+     width:100%;
+ }
+
+ .body {
+     margin-bottom: 10px;
+     padding: 5px 0px 5px 0px;
+     font-family: Arial;
+
+ }
+
+ .border {
+     border-radius: 5px;
+     border-color: rgb(166, 157, 157);
+     padding: 5px;
+     border-width: 1px;
+     width: 100%;
+ }
+
+ .button {
+     background-color: rgb(14, 240, 14);
+     border-radius: 5px;
+     border-width: 0px;
+     padding: 10px;
+     Font-family: Arial;
+     color: white;
+     display: flex;
+ }
+
+ #Huree {
+     margin-left: auto;
+     margin-right: auto;
+     padding: 20px;
+     Background-color: white;
+     border-radius: 10px;
+     width:200px;
+ 
+
+ }
+
+ .Cancel {
+     background-color: rgb(0, 0, 0);
+     border-radius: 5px;
+     border-width: 0px;
+     padding: 10px;
+     Font-family: Arial;
+     color: white;
+     display: flex;
+ }
+
+ .Submit {
+     background-color: rgb(0, 0, 0);
+     border-radius: 5px;
+     border-width: 0px;
+     padding: 10px;
+     Font-family: Arial;
+     color: white;
+     display: flex;
+ }
+ 

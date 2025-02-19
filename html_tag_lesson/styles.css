@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color: grey;
+}
+span {
+    color: brown;
+    background: yellow;
+}
+
+h1 {
+    color: red;
+}
+
+#lol {
+    color: rgb(45, 237, 2);
+    background-color: black;
+    font-size: large;
+    font-family: Franklin Gothic Medium;
+}
+
+#garchig1 {
+    background-color: red;
+    color: white;
+}
+
+.lol {
+    background-color: yellow
+}
+
+p {
+    color: purple;
+}
+
+#one {
+    color: green;
+}
+
+
+#two {
+    color: aqua;
+}
+
+#three {
+    color: brown;
+}
+
+#four {
+    color: blue;
+}
+
+.hello {
+    color: royalblue;
+}
+
+.bgcolor {
+    background-color: blueviolet;
+}
+
+.four p {
+    color: black;
+}
+
+ol,
+ul {
+    color: blue;
+}
+
+.green {
+    color: green
+} 
+
+.unit {
+    background-color:teal;
+    width:90%;
+    Height:300px;
+    font-size: 2em;
+}
+body {
+    background-color:white;
+    font-size:20px;
+}
+
+.unit p {
+    font-size:2em;
+}
+
+.container {
+    background-color:yellow;
+    width:200px;
+    height:200px;
+    margin:20px;
+    padding:100px;
+    border-width: 20px;
+    border-style:outset;
+    box-sizing: border-box;
+    border-radius:0%;
+    text-align:center;
+    
+}
+
+.container-2{
+    background-color:Pink;
+    width:200px;
+    height:200px;
+    margin: 40px;
+}

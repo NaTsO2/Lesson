@@ -1,0 +1,52 @@
+.box {
+    background-color:blue;
+    width: 200px;
+    height: 200px;
+}
+
+.greenbox {
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left:100px;
+}
+
+.redbox {
+    background-color: red;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+.yellowbox {
+    background-color:yellow;
+    position: relative;
+    top: 300px;
+    left: 300px;
+    
+}
+.subbox {
+    width:50px;
+    height:50px;
+    background-color:black;
+    position: absolute;
+    top:150px;
+    left:150px;
+}
+
+.boxteal {
+    background-color:teal;
+    width:200px;
+    height:200px;
+    position: fixed;
+    right:0;
+}
+
+.boxpink {
+    background-color: pink;
+    width:200px;
+    height:200px;
+    position: sticky;
+    top:10px;
+    z-index:100;
+}
