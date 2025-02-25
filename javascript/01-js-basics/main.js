@@ -396,15 +396,21 @@ while (n1 <= 200) {
 }
 console.log("Сондгой тоонуудын нийлбэр нь:", m1);
 
-console.log("Бодлого 6.================");
+// console.log("Бодлого 6.================");
 
-let z = 0, l=0, digit = 0;
 
-while (z <= 148) {
-    digit = z % 10;
-    z = (z - digit)/10;
-    console.log(z);
-}
+// let z1 = 1;
+// let digit = 0;
+
+
+// while (z1 !== 0) {
+//     if (z1 <= 148) {
+//         digit = z1 % 10;
+//         z1 = (z1 - digit) / 10;
+//         console.log(z1);
+//     }
+//     z1++;
+// }
 
 
 console.log("Бодлого 7.==================");
@@ -455,17 +461,417 @@ while (number <= 50) {
     number++
 }
 
-const arr = [1, 2, 3, 4, 5];
-
-for (let j=0; j < arr.length; j++) {
-    console.log(arr[j]);
-}
 
 console.log("Бодлого Array 1.===================");
 
-// let birthYear = [1994, 1997, 2003, 1993,2001];
+let birthYear = [1994, 1997, 2003, 1993,2001];
+let thisYear = 2025;
+let age = 0;
 
-console.log ("hicheel")
+for(i = 0; i < birthYear.length; i++) {
+    age = thisYear - (birthYear[i]+1);
+    console.log(age + " настай");
+}
+
+console.log("Бодлого Array 2.=====================");
+
+let multipleArr = [1,2,3,4];
+let second = 0;
+
+for (i = 0; i < multipleArr.length; i++) {
+    second = 2*(multipleArr[i]);
+    console.log(second);
+}
+
+console.log("Бодлого Array 3.=====================");
+
+let arr = [11,22,33,44];
+let sum = 0;
+
+for (i = 0; i < arr.length; i++) {
+    if (arr[i]%2 === 0) {
+        sum = sum + arr[i];
+    }
+}
+
+console.log("Тэгш элемэнтүүдийн нийлбэр нь:",sum)
+
+console.log("Бодлого Array 4.=====================");
+
+let arr1=[43,53,88,99];
+let sum1=0;
+
+for (i = 0; i < arr1.length; i++) {
+    sum1 = sum1 + arr1[i];
+}
+
+console.log("Массивийн нийлбэр", sum1)
+
+console.log("Бодлого Array 5.=====================");
+
+let arr2=[43,53,88,99];
+let sum2=0;
+let avg = 0;
+
+for (i = 0; i < arr1.length; i++) {
+    sum2 = sum2 + arr2[i];
+    avg = sum2/arr2.length;
+}
+
+console.log("Массивийн дундаж", avg)
+
+console.log("Бодлого Array 6.=====================");
+
+let arr3=[78,43,53,88,99];
+let max = arr3[0]
+
+for (i = 0; i < arr3.length; i++) {
+    if (arr3[i] > max ){
+        max = arr3[i];
+    }
+}
+
+console.log("Массивийн хамгийн их утга: ", max)
+
+console.log("Бодлого 2025.02.24 =====================================")
+
+// 1. Өгөгдсөн&nbsp;эерэг тооны урвууг хэвлэ. 
+// 	Жнь:  1234 output: 4321
+// 2. Өгөгдсөн натурал тооны ахмад орны&nbsp;цифрийг ол.&nbsp;
+// 	Жнь:  2345 output: 2
+// 3. Өгөгдсөн тооны хүрдийг дараах хэлбэрээр хэвлэ.
+// 	Жнь:  input: 4 
+// 		output:
+// 			4 * 1 = 4
+// 			4 * 2 = 8
+// 			4 * 3 = 12
+// 			4 * 4 = 16
+// 			4 * 5 = 20
+// 			4 * 6 = 24
+// 			4 * 7 = 28
+// 			4 * 8 = 32
+// 			4 * 9 = 36
+// 			4 * 10 = 40
+
+
+// 4. Өгсөн тоо анхны тоо эсэхийг ол. 
+// 	Жнь:  input: 2 output: 2 анхны тоо мөн
+// 	input: 4 output: 4 анхны тоо биш
+// 5. Өгөгдсөн массив дотор x тоо хэдэн удаа орсныг тоол.
+// 	Жнь:  arr=[2,3,5,8,3], x=3 output: 2
+// 6. Өгөгдсөн массивыг урвуугаар хэвлэ.
+// 	Жнь:  arr=[4,5,6,7,8] output: 8,7,6,5,4
+// 7. Өгөгдсөн массив дотроос z тоо байгаа эсэхийг шалгаад, индексийг нь хэвлэ.
+// 	Жнь:  arr=[10, 20, 30, 40, 50], z=40  output: 3
+// 8. Өгөгдсөн массивыг хамгийн багаас хамгийн их рүү эрэмбэл.
+// 	Жнь:  arr=[30, 90, 10, 40, 20]  output: [10, 20, 30, 40, 90]
+
+
+console.log("Бодлого 1.============");
+
+let firstNum = 868791;
+let reverseNum = 0;
+let digit = 0;
+
+while(firstNum !== 0) {
+    digit = firstNum%10;
+    firstNum = (firstNum - digit) / 10;
+    reverseNum = (reverseNum*10)+digit;
+}
+console.log(reverseNum);
+
+console.log("Бодлого 2.============");
+
+let nat = 5673;
+let digit1 = 0;
+
+while(nat !== 0) {
+    digit = nat%10;
+    nat = (nat-digit) / 10
+    console.log(nat);
+}
+
+
+
+console.log("bodlogo 3==================");
+
+let ogogdson = 8;
+let urjver = 1;
+let result = 0;
+while (urjver !== 11) {
+    result = ogogdson * urjver;
+    console.log(ogogdson.toString() + '*' + urjver.toString() + '=' + result.toString()); 
+    urjver++;    
+}
+
+console.log("Бодлого 4.============");
+
+let prime = 17;
+while (prime >= 50 ) {
+if (prime/prime === 0 && prime%2 !== 0) {
+    console.log(prime, "энэ тоо анхны тоо мөн");
+} else if (prime%2 === 0) {
+    console.log(prime, "энэ тоо анхны тоо биш");
+}
+}
+
+
+console.log("Бодлого 5.============");
+
+let r = [2,3,5,8,3]
+let count2 = 0;
+
+for (i = 0; i < r.length; i++) {
+    if (r[i] === 3) {    
+        console.log("х тоо ", r[i])
+        count2++;
+    }
+}
+console.log("x too", count2, "baina");
+
+console.log("Бодлого 6.============");
+
+let r1 = [2,3,5,8,3]
+let reverseR = 0;
+
+for (i = 0; i < r.length; i++) {
+
+}
+console.log("x too", count2, "baina");
+
+// ======================================
+
+// console.log("Object");
+
+// let person = {
+//   firstname: "Naraa",
+//   lastname: "Dorj",
+//   age: 22,
+//   address: {
+//     district: "HUD",
+//   },
+//   score: [90, 90, 100],
+
+//   hevle: function () {
+//     console.log("Name:", this.firstname);
+//   },
+// };
+
+// let person1 = {
+//   firstname: "Saraa",
+//   lastname: "Bat",
+//   age: 22,
+//   address: {
+//     district: {
+//       code: "HUD",
+//     },
+//   },
+//   score: [90, 90, 100],
+
+//   hevle: function () {
+//     console.log("Name:", this.firstname);
+//   },
+// };
+
+// console.log("Person:", person);
+// console.log("Person-Name:", person.firstname);
+// console.log("Person-Ovog:", person.lastname);
+// // console.log("Person-Nas:", person.age);
+// console.log("Person-Nas:", person["age"]);
+
+// console.log("Person-Nas:", person.address.district);
+// console.log("Person-Nas:", person.score[2]);
+
+// person.hevle();
+// person1.hevle();
+
+// let a = 1000;
+
+// let b = 0;
+// console.log(a);
+// console.log(b);
+// b = a;
+// console.log(a);
+// console.log(b);
+
+// let person3 = { ...person1 };
+
+// person3.firstname = "Tsetsgee";
+
+// console.log(person3.firstname);
+// console.log(person1.firstname);
+
+// console.log();
+
+// // Math.floor
+
+// let h = [1, 2];
+
+// // h.leng
+
+// let too = 100;
+// too.toFixed(3);
+// console.log(too);
+
+// let zoo = "123.23";
+
+// // zoo = Number(zoo) + 100;
+// // zoo = parseInt(zoo) + 100;
+// zoo = parseFloat(zoo) + 100;
+// console.log(zoo.toFixed(2));
+
+// let rabbit = {
+//   name: "bunny",
+//   color: "white",
+// };
+
+// let mouse = {
+//   name: "jerry",
+//   color: "brown",
+// };
+
+// let marmot = {
+//   name: "walter",
+//   color: "yellow",
+// };
+
+// let employees = [
+//   {
+//     name: "bunny",
+//     accountnumber: "0012",
+//     transactions: [
+//       { date: "2024-09-11" },
+//       { date: "2024-09-12" },
+//       { date: "2024-09-13" },
+//     ],
+//     color: "white",
+//     salary: 1000,
+//   },
+//   {
+//     name: "jerry",
+//     color: "white",
+//     salary: 1000,
+//   },
+//   {
+//     name: "walter",
+//     color: "white",
+//     salary: 1000,
+//   },
+// ];
+
+// for (let index = 0; index < animals.length; index++) {
+//   console.log("Name: ", animals[index].name);
+// }
+
+
+
+
+// =============================================
+let dundaj = 0;
+let students = [
+    
+    {
+      name: 'Сэд-Эрдэнэ',
+      age: 19,
+      gender: 'male',
+      points: 70,
+      hevle: function () {
+        for (i = 0; i<students.length; i++) {
+         dundaj = (students[i] + students [i]+1) / students.length
+     }
+     console.log("Сурагчдын дундаж нас: ", dundaj);
+     }
+      
+    },
+    {
+      name: 'Индра',
+      age: 19,
+      gender: 'female',
+      points: 50,
+    },
+    {
+      name: 'Хатнаа ',
+      age: 21,
+      gender: 'male',
+      points: 99,
+    },
+    {
+      name: 'Тэмүүлэн',
+      age: 23,
+      gender: 'male',
+      points: 55,
+    },
+    {
+      name: 'Намуун',
+      age: 23,
+      gender: 'female',
+      points: 85,
+    },
+  ];
+  
+  // 1. Өгөгдсөн array-гаас эхний объектыг хэвлэж гаргах
+  // 2. Ангид хэдэн эрэгтэй, эмэгтэй сурагч байгааг ол.
+  // 3. Сурагчдын насны дунджийг олох функц бичих
+  // 4. Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол
+  // 5. 60-аас дээш оноо авсан cурагчдийг тоол
+console.log("Обьект бодлого ===================")
+
+// bodlogo 1
+for (i = 0; i < students.length; i++) {
+    console.log("Нэр", students[i].name);
+}
+
+// bodlogo 2
+
+let count = 0;
+let count1 = 0
+
+for (i = 0; i < students.length; i++) {
+    if (students[i].gender === "male") {
+        count++
+    } else if (students[i].gender === "female") {
+        count1++
+    } 
+}
+
+console.log(count, 'эрэгтэй сурагч байна')
+console.log(count1, 'эмэгтэй сурагч байна')
+
+// bodlogo 3
+
+// Object.hevle()
+
+// bodlogo 4
+
+for (i = 0; i < students.length; i++) {
+    if (students[i].age >= 21) {
+        console.log(students[i].name, students[i].age, "настай архи ууж болно")
+    }
+}
+
+// bodlogo 5
+
+let tooloh = 0;
+
+for (i = 0; i < students.length; i++) {
+    if (students[i].points >= 60) {
+        console.log(students[i].name, students[i].points, " тэнцсэн байна.")
+        tooloh++;
+    }
+    
+}
+
+console.log(tooloh, "сурагч тэнцсэн байна.");
+
+
+
+
+
+
+
+
+
+
 
 
 
